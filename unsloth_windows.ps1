@@ -19,7 +19,7 @@ if ($LASTEXITCODE -ne 0) {
 }
 
 # Write-Host "Installing Pytorch via pip..."
-pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu124
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu128
 
 if ($LASTEXITCODE -ne 0) {
     Write-Error "Failed to install Pytorch."
@@ -35,7 +35,7 @@ if ($LASTEXITCODE -ne 0) {
 }
 
 Write-Host "Installing xformers..."
-pip3 install -U xformers --index-url https://download.pytorch.org/whl/cu124
+pip3 install -U xformers --index-url https://download.pytorch.org/whl/cu128
 
 if ($LASTEXITCODE -ne 0) {
     Write-Error "Failed to install xformers."
